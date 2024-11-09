@@ -36,6 +36,7 @@ class TestModels(TestCase):
 			category=category1
 
 		)
+		print("Hello")
 
 		self.assertEquals(self.project1.budget_left, 9884)
 		#self.assertEquals(self.project1.budget_left, 8000)
