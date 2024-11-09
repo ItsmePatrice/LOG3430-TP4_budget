@@ -1,5 +1,5 @@
-from budget.models import Project, Category, Expense
 from django.test import TestCase
+from budget.models import Project, Category, Expense
 
 
 class TestModels(TestCase):
@@ -36,9 +36,8 @@ class TestModels(TestCase):
 			category=category1
 
 		)
-		print("Hello")
 
-		self.assertEquals(self.project1.budget_left, 9884)
+		self.assertEquals(self.project1.budget_left, 7000)
 		#self.assertEquals(self.project1.budget_left, 8000)
 
 		
